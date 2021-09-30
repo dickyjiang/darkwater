@@ -12,8 +12,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:'stylesheet',
+        href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Yeseva+One&display=swap"
+      }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

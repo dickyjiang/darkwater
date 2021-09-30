@@ -2,9 +2,13 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
+  purge: [],
   purge: [
-    './public/**/*.html',
-     './**/*.{js,jsx,ts,tsx,vue}',
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
 
   darkMode: false, // or 'media' or 'class'
@@ -20,10 +24,10 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
 
-      blue: {
-        light: '#85d7ff',
-        DEFAULT: '#1fb6ff',
-        dark: '#009eeb',
+      darkwater: {
+        light: '',
+        DEFAULT: '#21272b',
+        dark: '',
       },
 
     },
@@ -39,7 +43,12 @@ module.exports = {
     //   yellow: colors.amber,
     // },
 
-    extend: {},
+    extend: {
+      fontFamily: {
+        'robotoMono' : ['"Roboto Mono"', 'monospace',],
+        'yeseva' :['"Yeseva One"']
+      }
+    },
   },
   variants: {
     extend: {},
